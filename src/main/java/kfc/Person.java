@@ -6,7 +6,7 @@ public class Person {
 
     private int age;
 
-    int id;
+    private int id;
 
     int counter = 0;
 
@@ -30,6 +30,17 @@ public class Person {
         return age;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if (id == 2) {
+            System.out.println("Привет я, " + fullName + ", избранный!");
+            return;
+        }
+    }
+
     public void setAge(int age) {
         if (age < 0) {
             System.out.println("Возраст не может быть меньше 0");
@@ -44,10 +55,7 @@ public class Person {
     }
 
     public void talk(){
-        if (id == 2) {
-            System.out.println("Привет я, " + fullName + " избранный!");
-        }
-        else if (fullName != null && !fullName.isEmpty() && age > 0) {
+                if (fullName != null && !fullName.isEmpty() && age > 0) {
             System.out.println("Привет я " + fullName + " и мне " + age + " лет");
         }
     }
