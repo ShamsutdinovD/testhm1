@@ -8,7 +8,7 @@ public class Person {
 
     private int id;
 
-    int counter = 0;
+    private static int counter = 0;
 
 
     public Person(){
@@ -48,7 +48,7 @@ public class Person {
         }
     }
 
-    public Person(String fullName, int age, int id) {
+    public Person(String fullName, int age) {
         this.fullName = fullName;
         this.age = age;
         this.id = counter++;
@@ -60,7 +60,7 @@ public class Person {
         }
     }
 
-    public void count(){
+    public static void count(){
         System.out.println("Количество созданных объектов " + counter);
     }
 }
