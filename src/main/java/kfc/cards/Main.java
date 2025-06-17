@@ -6,7 +6,7 @@ public class Main {
         Debitcard1 debitcard1 = new Debitcard1("sber", 10000, 1000);
         Debitcard2 debitcard2 = new Debitcard2("tink", 20000, 2000);
 
-        debitcard1.getBonuspoints();
-        debitcard2.getAccumulation();
+        debitcard1.printInfo();
+        debitcard2.printInfo();
     }
 }
