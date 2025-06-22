@@ -12,6 +12,8 @@ public class Main {
             card.printInfo();
             card.pay();
             card.increaseBalance();
+            card.setBalance(2000);
+            card.pay();
         }
     }
 }

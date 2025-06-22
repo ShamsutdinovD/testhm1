@@ -13,7 +13,9 @@ public class BonusCard extends Card {
     @Override
     public void pay() {
         if (getBalance() > purchase) {
-            System.out.println("Количество бонусных баллов: " + purchase * 0.01);
+            minusBalance(5000);
+            System.out.print("Баланс: " + getBalance());
+            System.out.println(", Количество бонусных баллов: " + purchase * 0.01);
         } else {
             System.out.println("Недостаточно средств");
         }
