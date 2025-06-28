@@ -1,6 +1,6 @@
 package kfc.homework4;
 
-public class Goods {
+public class Product {
 
     private  String name;
 
@@ -8,7 +8,7 @@ public class Goods {
 
     private double rating;
 
-    public Goods(String name, double price, double rating) {
+    public Product(String name, double price, double rating) {
         this.name = name;
         this.price = price;
         this.rating = rating;
